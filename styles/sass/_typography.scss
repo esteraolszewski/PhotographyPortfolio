@@ -1,2 +1,28 @@
 @use "./variables";
 
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&family=Sofia+Sans+Extra+Condensed:wght@300&display=swap');
+
+
+a {
+    font-size: 15px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 150px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+p {
+    font-size: 50px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+.copyright {
+
+    p {
+        font-size: 10px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+}

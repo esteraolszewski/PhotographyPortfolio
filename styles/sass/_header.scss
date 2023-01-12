@@ -1,0 +1,41 @@
+header {
+    height: 100vh;
+
+// NAV BAR
+
+.navMenu {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+
+    .navItem {
+        list-style: none;
+       
+        a:link,
+        a:visited,
+        a:hover,
+        a:active { 
+            text-decoration: none; 
+        }
+
+    }
+}
+
+// HERO SECTION
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        padding-top: 50px;
+    }
+    p {
+        padding-top: 10px;
+    }
+}
+
+}
