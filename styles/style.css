@@ -236,3 +236,20 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.gallery .row {
+  max-width: 100%;
+  padding: 0 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.gallery .row img {
+  margin-top: 8px;
+  width: 100%;
+  padding: 4px;
+}

@@ -1,0 +1,21 @@
+.gallery {
+    // display: flex;
+    // flex-wrap: wrap;
+    // padding: 0 4px;
+    
+    .row {
+        max-width: 100%;
+        padding: 0 4px;
+        display: flex;
+        flex-direction: row;
+
+        img {
+            margin-top: 8px;
+            width: 100%;
+            padding: 4px;
+          }
+    }
+
+
+
+}
