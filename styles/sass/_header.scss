@@ -1,13 +1,18 @@
+
 header {
     height: 100vh;
+    background-image: url(./images/newhero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 // NAV BAR
 
 .navMenu {
     display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-evenly;
+    flex-direction: column;
+    // justify-content: space-between;
+    
 
     .navItem {
         list-style: none;
@@ -26,15 +31,14 @@ header {
 
 .title {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    height: 100vh;
+    
     h1 {
-        padding-top: 50px;
-    }
-    p {
-        padding-top: 10px;
+        letter-spacing: 18px;
+        color: black;
+        opacity: 0.6;
     }
 }
 

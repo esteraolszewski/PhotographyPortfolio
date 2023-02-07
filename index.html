@@ -13,12 +13,15 @@
 </head>
 
 <body>
-
-    <div class="wrapper">
+    <!-- <div class="wrapper"> -->
 
         <!-- HEADER -->
-        <header>
-
+        <header>            
+            <div class="title">
+                <h1>Estera Olszewski</h1>
+                <!-- <p>Photographer</p> -->
+            </div>
+            
             <nav class="navBar">
                 <ul class="navMenu">
                     <li class="navItem"><a href="#">About</a></li>
@@ -26,25 +29,41 @@
                     <li class="navItem"><a href="#">Contact</a></li>
                 </ul>
             </nav>
-
-            <div class="title">
-                <h1>Estera Olszewski</h1>
-                <p>Photographer</p>
-            </div>
-            
         </header>
 
         <!-- MAIN -->
         <main id="gallery">
+
+            <div class="fullImage" id="fullImageBox">
+                <img src="./styles/images/90s1.jpg" alt="" id="fullImage">
+                <span onclick="closeImage()">x</span>
+            </div>
+
             <div class="gallery">
-                <div class="row">
+                <img src="./styles/images/90s1.jpg" alt="" onclick="openImage(this.src)">
+                <img src="./styles/images/90s2.jpg" alt="" onclick="openImage(this.src)">
+                <img src="./styles/images/90s3.jpg" alt="" onclick="openImage(this.src)">
+                <img src="./styles/images/90s4.jpg" alt="" onclick="openImage(this.src)">
+                <img src="./styles/images/ballet1.jpg" alt="" onclick="openImage(this.src)">
+                <img src="./styles/images/ballet2.jpg" alt="" onclick="openImage(this.src)">
+                <img src="./styles/images/ballet3.jpg" alt="" onclick="openImage(this.src)">
+                <img src="./styles/images/ballet4.jpg" alt="" onclick="openImage(this.src)">
+                <img src="./styles/images/ballet5.jpg" alt="" onclick="openImage(this.src)">
+                <img src="./styles/images/ballet6.jpg" alt="" onclick="openImage(this.src)">
+                <img src="./styles/images/ballet7.jpg" alt="" onclick="openImage(this.src)">
+                <img src="./styles/images/ballet8.jpg" alt="" onclick="openImage(this.src)">
+                <img src="./styles/images/beret1.jpg" alt="" onclick="openImage(this.src)">
+                <img src="./styles/images/beret2.jpg" alt="" onclick="openImage(this.src)">
+                <img src="./styles/images/beret3.jpg" alt="" onclick="openImage(this.src)">
+                <img src="./styles/images/beret4.jpg" alt="" onclick="openImage(this.src)">
+                <!-- <div class="row" data-aos="fade" data-aos-delay="400">
                     <img src="./styles/images/90s1.jpg" alt="">
                     <img src="./styles/images/90s2.jpg" alt="">
                     <img src="./styles/images/90s3.jpg" alt="">
                     <img src="./styles/images/90s4.jpg" alt="">
                 </div>
 
-                <div class="row">   
+                <div class="row" data-aos="fade" data-aos-delay="400">   
                     <img src="./styles/images/ballet1.jpg" alt="">
                     <img src="./styles/images/ballet2.jpg" alt="">
                     <img src="./styles/images/ballet3.jpg" alt="">
@@ -55,28 +74,28 @@
                     <img src="./styles/images/ballet8.jpg" alt="">
                 </div>
 
-                <div class="row">
+                <div class="row" data-aos="fade" data-aos-delay="400"
                     <img src="./styles/images/beret1.jpg" alt="">
                     <img src="./styles/images/beret2.jpg" alt="">
                     <img src="./styles/images/beret3.jpg" alt="">
                     <img src="./styles/images/beret4.jpg" alt="">
                 </div>
 
-                <div class="row">
+                <div class="row" data-aos="fade" data-aos-delay="400">
                     <img src="./styles/images/lingerie1.jpg" alt="">
                     <img src="./styles/images/lingerie2.jpg" alt="">
                     <img src="./styles/images/lingerie3.jpg" alt="">
                     <img src="./styles/images/lingerie4.jpg" alt="">
                 </div>
 
-                <div class="row">
+                <div class="row" data-aos="fade" data-aos-delay="400">
                     <img src="./styles/images/vday1.jpg" alt="">
                     <img src="./styles/images/vday2.jpg" alt="">
                     <img src="./styles/images/vday3.jpg" alt="">
                     <img src="./styles/images/vday4.jpg" alt="">
                 </div>
 
-                <div class="row">
+                <div class="row" data-aos="fade" data-aos-delay="400">
                     <img src="./styles/images/elements1.jpg" alt="">
                     <img src="./styles/images/elements2.jpg" alt="">
                     <img src="./styles/images/elements3.jpg" alt="">
@@ -91,21 +110,21 @@
                     <img src="./styles/images/elements12.jpg" alt="">
                 </div>
 
-                <div class="row">
+                <div class="row" data-aos="fade" data-aos-delay="400">
                     <img src="./styles/images/VOE2.jpg" alt="">
                     <img src="./styles/images/VOE4.jpg" alt="">
                     <img src="./styles/images/VOE5.jpg" alt="">
                     <img src="./styles/images/VOE6.jpg" alt="">
                 </div>
 
-                <div class="row">
+                <div class="row" data-aos="fade" data-aos-delay="400">
                     <img src="./styles/images/max1.jpg" alt="">
                     <img src="./styles/images/max2.jpg" alt="">
                     <img src="./styles/images/max3.jpg" alt="">
                     <img src="./styles/images/max4.jpg" alt="">
                 </div>
 
-                <div class="row">
+                <div class="row" data-aos="fade" data-aos-delay="400">
                     <img src="./styles/images/london1.jpg" alt="">
                     <img src="./styles/images/london2.jpg" alt="">
                     <img src="./styles/images/london3.jpg" alt="">
@@ -116,19 +135,19 @@
                     <img src="./styles/images/london8.jpg" alt="">
                 </div>
 
-                <div class="row">
+                <div class="row" data-aos="fade" data-aos-delay="400">
                     <img src="./styles/images/estefa1.jpg" alt="">
                     <img src="./styles/images/estefa2.jpg" alt="">
                     <img src="./styles/images/estefa3.jpg" alt="">
                     <img src="./styles/images/estefa4.jpg" alt="">
                 </div>
 
-                <div class="row">
+                <div class="row" data-aos="fade" data-aos-delay="400">
                     <img src="./styles/images/v1.jpg" alt="">
                     <img src="./styles/images/v2.jpg" alt="">
                     <img src="./styles/images/v3.jpg" alt="">
                     <img src="./styles/images/v4.jpg" alt="">
-                </div>
+                </div> -->
             </div>
         </main>
 
@@ -139,10 +158,11 @@
             </div>
         </footer>
 
-    </div>
+    <!-- </div> -->
+
 
     <!-- JAVASCRIPT -->
-    <script src="./styles/photoportfolio.js"></script>
+    <script src="./styles/photoportfolio.js" defer></script>
     
 </body>
 </html>
