@@ -249,7 +249,7 @@ a {
 }
 
 h1 {
-  font-size: clamp(2.5rem, 0.125rem + 7.9167vw, 8.4375rem);
+  font-size: clamp(2.5rem, 1.1173rem + 6.5068vw, 8.4375rem);
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -272,12 +272,11 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  position: fixed;
   height: 100vh;
   width: 50%;
+  padding: 40px;
+  position: absolute;
+  left: 0;
 }
 .navBar h1 {
   text-transform: uppercase;
@@ -301,9 +300,43 @@ p {
   text-decoration: none;
 }
 
-@media (max-width: 700px) {
-  header {
-    background-image: url(./images/175064178_482278286353102_4665886699562710464_n.jpg);
+@media (max-width: 1400px) {
+  .navBar {
+    width: 30%;
+  }
+  h1 {
+    font-size: clamp(2.5rem, 2.2786rem + 1.0417vw, 3.125rem);
+  }
+}
+@media (max-width: 1040px) {
+  .navBar {
+    width: 20%;
+  }
+  h1 {
+    font-size: clamp(0.625rem, 0.1823rem + 2.0833vw, 1.875rem);
+  }
+}
+@media (max-width: 860px) {
+  .navBar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 0;
+    height: 100px;
+    width: 100vw;
+  }
+  .navBar .navMenu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 main {
@@ -375,8 +408,36 @@ main .fullImage span {
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
-  .gallery {
+@media (max-width: 1400px) {
+  main {
+    width: 70%;
+  }
+}
+@media (max-width: 1040px) {
+  main {
+    width: 80%;
+  }
+}
+@media (max-width: 860px) {
+  main {
+    width: 100vw;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 640px) {
+  main .gallery {
+    --num-cols: 4;
+    --row-height: 200px ;
+  }
+}
+@media (max-width: 480px) {
+  main .gallery {
+    --num-cols: 2;
+    --row-height: 300px ;
+  }
+}
+@media (max-width: 340px) {
+  main .gallery {
     --num-cols: 2;
     --row-height: 200px ;
   }

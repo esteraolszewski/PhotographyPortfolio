@@ -4,10 +4,11 @@
 background-color: white;
 display: flex;
 flex-direction: column;
-align-items: flex-start;
-position: fixed;
 height: 100vh;
 width: 50%;
+padding: 40px;
+position: absolute;
+left: 0;
 
     h1 {
         
@@ -33,28 +34,44 @@ width: 50%;
     }
 }
     
-// HERO SECTION
-
-// .title {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     height: 100vh;
-    
-//     h1 {
-//         letter-spacing: 18px;
-//         color: black;
-//         opacity: 0.6;
-//     }
-// }
-
 
 
 // MEDIA QUERIES
 
-@media (max-width: 700px) {
-    header {
-        background-image: url(./images/175064178_482278286353102_4665886699562710464_n.jpg);
+@media (max-width: 1400px) {
+    .navBar {
+        width: 30%;
         
     }
+
+    h1 {
+        font-size: clamp(2.5rem, 2.2786rem + 1.0417vw, 3.125rem);
+    }
+}
+
+@media (max-width: 1040px) {
+    .navBar {
+        width: 20%;
+        
+    }
+
+    h1 {
+        font-size: clamp(0.625rem, 0.1823rem + 2.0833vw, 1.875rem);
+    }
+}
+
+@media (max-width: 860px) {
+    .navBar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+        height: 100px;
+        width: 100vw;
+        
+        .navMenu {
+            flex-direction: row;
+        }
+    }
+
 }

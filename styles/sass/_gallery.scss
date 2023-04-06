@@ -78,9 +78,51 @@ main {
 
 // MEDIA QUERIES
 
-@media (max-width: 1024px) {
-    .gallery {
-        --num-cols: 2;
-        --row-height: 200px
+@media (max-width: 1400px) {
+    main {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1040px) {
+    main {
+        width: 80%;
+    }
+}
+
+@media (max-width: 860px) {
+    main {
+        width: 100vw;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 640px) {
+    main {
+
+        .gallery {
+            --num-cols: 4;
+            --row-height: 200px
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+
+        .gallery {
+            --num-cols: 2;
+            --row-height: 300px
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    main {
+
+        .gallery {
+            --num-cols: 2;
+            --row-height: 200px
+        }
     }
 }
