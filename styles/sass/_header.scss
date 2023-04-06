@@ -1,48 +1,54 @@
 
-header {
-    height: 100vh;
-    background-image: url(./images/newhero.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
-// NAV BAR
+.navBar {
+background-color: white;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+position: fixed;
+height: 100vh;
+width: 50%;
 
-.navMenu {
-    display: flex;
-    flex-direction: column;
-    // justify-content: space-between;
-    
+    h1 {
+        
+        text-transform: uppercase;
+    }
 
-    .navItem {
-        list-style: none;
-       
-        a:link,
-        a:visited,
-        a:hover,
-        a:active { 
-            text-decoration: none; 
+    .navMenu {
+        display: flex;
+        flex-direction: column;
+        
+        
+        .navItem {
+            list-style: none;
+            
+            a:link,
+            a:visited,
+            a:hover,
+            a:active { 
+                text-decoration: none; 
+            }
+            
         }
-
     }
 }
-
+    
 // HERO SECTION
 
-.title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+// .title {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
     
-    h1 {
-        letter-spacing: 18px;
-        color: black;
-        opacity: 0.6;
-    }
-}
+//     h1 {
+//         letter-spacing: 18px;
+//         color: black;
+//         opacity: 0.6;
+//     }
+// }
 
-}
+
 
 // MEDIA QUERIES
 

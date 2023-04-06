@@ -13,23 +13,19 @@
 </head>
 
 <body>
-    <!-- <div class="wrapper"> -->
+    <div class="wrapper">
 
-        <!-- HEADER -->
-        <header>            
-            <div class="title">
-                <h1 data-text="Estera Olszewski">Estera Olszewski</h1>
-                <!-- <p>Photographer</p> -->
-            </div>
-            
-            <nav class="navBar">
-                <ul class="navMenu">
-                    <li class="navItem"><a href="#">About</a></li>
-                    <li class="navItem"><a href="#gallery">Gallery</a></li>
-                    <li class="navItem"><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <!-- NAVBAR -->
+        <nav class="navBar">
+            <h1>Estera Olszewski</h1>
+            <ul class="navMenu">
+                <li class="navItem"><a href="#">About</a></li>
+                <li class="navItem"><a href="#gallery">Gallery</a></li>
+                <li class="navItem"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+        
 
         <!-- MAIN -->
         <main id="gallery">
@@ -106,17 +102,15 @@
                 <img src="./styles/images/VOE5.jpg" alt="" onclick="openImage(this.src)">
                 <img src="./styles/images/VOE6.jpg" alt="" onclick="openImage(this.src)" class="imageGridCol"> 
             </div>
+
+            <footer>
+                <div class="copyright">
+                    <p>© Estera Olszewski Photography</p>
+                </div>
+            </footer>
         </main>
 
-        <!-- FOOTER -->
-        <footer>
-            <div class="copyright">
-                <p>© Estera Olszewski Photography</p>
-            </div>
-        </footer>
-
-    <!-- </div> -->
-
+    </div class="wrapper">
 
     <!-- JAVASCRIPT -->
     <script src="./styles/photoportfolio.js" defer></script>

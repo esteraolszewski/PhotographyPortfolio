@@ -1,72 +1,78 @@
-.gallery {
-    --gap: 10px;
-    --num-cols: 4;
-    --row-height: 300px;
+main {
+    width: 50%;
+    position: absolute;
+    right: 0;
 
-    display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap);
-    padding: var(--gap);
+    .gallery {
+        --gap: 10px;
+        --num-cols: 4;
+        --row-height: 300px;
 
-    img {
+        display: grid;
+        grid-template-columns: repeat(var(--num-cols), 1fr);
+        grid-auto-rows: var(--row-height);
+        gap: var(--gap);
+        padding: var(--gap);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .imageGridCol {
+            grid-column: span 2;
+        }
+
+        .imageGridRow {
+            grid-row: span 2;
+        }
+
+        // width: 80%;
+        // margin: 100px auto 50px;
+        // display: grid;
+        // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        // grid-gap: 25px;
+
+        img {
+            width: 100%;
+            cursor: pointer;
+            transition: all ease-out 0.5s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            transition: all ease-in 0.5s;
+        }
+        
+    }
+
+    .fullImage {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
 
-    .imageGridCol {
-        grid-column: span 2;
-    }
+        img {
+            width: 90%;
+            max-width: 500px;
+        }
 
-    .imageGridRow {
-        grid-row: span 2;
-    }
-
-    // width: 80%;
-    // margin: 100px auto 50px;
-    // display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    // grid-gap: 25px;
-
-    img {
-        width: 100%;
-        cursor: pointer;
-        transition: all ease-out 0.5s;
-    }
-
-    img:hover {
-        transform: scale(1.1);
-        transition: all ease-in 0.5s;
-    }
-    
-}
-
-.fullImage {
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
-
-    img {
-        width: 90%;
-        max-width: 500px;
-    }
-
-    span {
-        position: absolute;
-        top: 5%;
-        right: 5%;
-        font-size: 30px;
-        color: white;
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        cursor: pointer;
+        span {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            font-size: 30px;
+            color: white;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            cursor: pointer;
+        }
     }
 }
 
