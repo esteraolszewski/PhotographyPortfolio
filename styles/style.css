@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&family=Sofia+Sans+Extra+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&family=Sofia+Sans+Extra+Condensed:wght@300&family=Josefin+Sans:wght@200&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -242,8 +242,8 @@ img {
 }
 
 a {
-  font-size: 30px;
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-size: clamp(0.625rem, 0.1823rem + 2.0833vw, 1.875rem);
+  font-family: "Josefin Sans", sans-serif;
   color: black;
   line-height: 3;
 }
@@ -255,7 +255,7 @@ h1 {
 
 p {
   font-size: 50px;
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .copyright p {
@@ -274,7 +274,7 @@ p {
           flex-direction: column;
   height: 100vh;
   width: 50%;
-  padding: 40px;
+  padding: 0 15px;
   position: fixed;
   left: 0;
 }
@@ -289,6 +289,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-left: 0;
 }
 .navBar .navMenu .navItem {
   list-style: none;
@@ -338,6 +339,15 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 40%;
+  }
+}
+@media (max-width: 520px) {
+  .navBar .navMenu {
+    width: 50%;
   }
 }
 main {
