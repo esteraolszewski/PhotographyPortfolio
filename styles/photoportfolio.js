@@ -9,3 +9,4 @@ function openImage(pic) {
 function closeImage() {
     fullImageBox.style.display = "none";
 }
+

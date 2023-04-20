@@ -16,7 +16,7 @@ h1 {
 }
 
 p {
-    font-size: 50px;
+    font-size: clamp(0.625rem, 0rem + 2.0833vw, 2.1875rem);
     font-family: 'Josefin Sans', sans-serif;
 
 }

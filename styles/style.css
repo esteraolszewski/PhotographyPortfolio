@@ -254,7 +254,7 @@ h1 {
 }
 
 p {
-  font-size: 50px;
+  font-size: clamp(0.625rem, 0rem + 2.0833vw, 2.1875rem);
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -277,6 +277,9 @@ p {
   padding: 0 15px;
   position: fixed;
   left: 0;
+}
+.navBar .head {
+  text-transform: uppercase;
 }
 .navBar h1 {
   text-transform: uppercase;
@@ -323,9 +326,9 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
